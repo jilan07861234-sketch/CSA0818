@@ -1,0 +1,9 @@
+def max(a,b):
+  if a>b:
+   return a
+  else:
+   return b
+a=int(input("enter a value:"))
+b=int(input("enter b value:"))
+maximum=max(a,b)
+print("the maximum value:",maximum)
