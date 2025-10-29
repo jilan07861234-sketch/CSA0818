@@ -10,3 +10,8 @@ if sum==num:
 else:
     print("not a Armstrong number")
 
+Output:
+enter the number:153
+Armstrong number
+enter the number:100
+not a Armstrong number
