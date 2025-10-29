@@ -15,7 +15,8 @@ for k in range(0,n):
     print(y[k],end=' ')
 
 
-Outout:enter the number:50
+Outout:
+enter the number:50
 the factors of 50 are:
 [1, 2, 5, 10, 25]
 number of function: 5
