@@ -9,3 +9,12 @@ if sum==num:
     print("Armstrong number")
 else:
     print("not a Armstrong number")
+
+
+output:enter the number:50
+the factors of 50 are:
+[1, 2, 5, 10, 25]
+number of function: 5
+enter n value:4
+first 4 factors;
+1 2 5 10 
