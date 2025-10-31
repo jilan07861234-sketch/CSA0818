@@ -1,0 +1,13 @@
+a=10
+b=20
+c=30
+if a>=b and a>=c:
+    largest=a
+if b>=a and b>=c:
+    largest=b
+else:
+    largest=c
+print("the largest value:",largest)
+
+OUTPUT:
+the largest value: 30
