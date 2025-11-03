@@ -1,0 +1,7 @@
+text="python"
+reversed_text=text[::-1]
+print(reversed_text)
+
+OUTPUT:
+enter a string:level
+it is a palindrome
