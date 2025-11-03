@@ -5,3 +5,7 @@ if string==reverse_string:
     print("it is a palindrome")
 else:
     print("it is not a palindrome")
+
+OUTPUT:
+enter a string:level
+it is a palindrome
