@@ -13,4 +13,9 @@ for i in range(0,len(str)):
 print("total number of vowel and consonant are")
 print(vcount,v)
 print(ccount,c)
-    
+
+OUTPUT:
+enter a string:apple
+total number of vowel and consonant are
+2 ['a', 'e']
+3 ['p', 'p', 'l']
