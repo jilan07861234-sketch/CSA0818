@@ -1,0 +1,7 @@
+string=input("enter a string:")
+string=string.lower()
+reverse_string=string[::-1]
+if string==reverse_string:
+    print("it is a palindrome")
+else:
+    print("it is not a palindrome")
