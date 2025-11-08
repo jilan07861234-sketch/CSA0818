@@ -33,3 +33,13 @@ square=n**2
 cube=n**3
 print("square of the number:",square)
 print("cube of the number:",cube)
+
+MEAN,MEDIAN AND MODE IN IMPORT:
+import statistics
+n=list(map(float,input("enter number seperated by space:").split()))
+mean=statistics.mean(n)
+median=statistics.median(n)
+mode=statistics.mode(n)
+print("mean value:",mean)
+print("median value:",median)
+print("mode value:",mode)
