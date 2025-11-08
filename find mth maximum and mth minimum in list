@@ -1,0 +1,8 @@
+numbers=[2,9,4,10,7,6]
+numbers.sort()
+m=int(input("maximum value:"))
+n=int(input("minimum value:"))
+maximum=numbers[-m]
+minimum=numbers[n-1]
+print("m th maximum value:",maximum)
+print("m th minimum value:",minimum)
