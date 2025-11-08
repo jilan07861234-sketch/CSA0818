@@ -8,11 +8,21 @@ minimum=numbers[n-1]
 print("m th maximum value:",maximum)
 print("m th minimum value:",minimum)
 
-LCM AND GCD
+LCM AND GCD OF TWO NUMBERS:
 import math
 a=int(input("enter first number:"))
 b=int(input("enter second number:"))
 gcd=math.gcd(a,b)
 lcm=a*b/gcd
+print("gcd of the two value:",gcd)
+print("lcm of the two value:",lcm)
+
+LCM AND GCM OF THREE NUMBERS:
+import math
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+c=int(input("enter third number:"))
+gcd=math.gcd(a,b,c)
+lcm=a*b*c/gcd
 print("gcd of the two value:",gcd)
 print("lcm of the two value:",lcm)
