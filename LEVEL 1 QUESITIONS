@@ -1,4 +1,4 @@
-FIND Mth MAXIMUM AND Mth MINIMUM VALUE IN LIST
+FIND Mth MAXIMUM AND Mth MINIMUM VALUE IN LIST:
 numbers=[2,9,4,10,7,6]
 numbers.sort()
 m=int(input("maximum value:"))
@@ -26,3 +26,10 @@ gcd=math.gcd(a,b,c)
 lcm=a*b*c/gcd
 print("gcd of the two value:",gcd)
 print("lcm of the two value:",lcm)
+
+SQUARE AND CUBE OF DECIMAL NUMBER:
+n=int(input("enter a decimal number:"))
+square=n**2
+cube=n**3
+print("square of the number:",square)
+print("cube of the number:",cube)
