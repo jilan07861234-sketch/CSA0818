@@ -1,0 +1,18 @@
+FIND Mth MAXIMUM AND Mth MINIMUM VALUE IN LIST
+numbers=[2,9,4,10,7,6]
+numbers.sort()
+m=int(input("maximum value:"))
+n=int(input("minimum value:"))
+maximum=numbers[-m]
+minimum=numbers[n-1]
+print("m th maximum value:",maximum)
+print("m th minimum value:",minimum)
+
+LCM AND GCD
+import math
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+gcd=math.gcd(a,b)
+lcm=a*b/gcd
+print("gcd of the two value:",gcd)
+print("lcm of the two value:",lcm)
