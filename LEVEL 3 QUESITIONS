@@ -1,0 +1,43 @@
+# Read size of matrix
+n = int(input("Enter size of square matrix: "))
+matrix = []
+print("Enter matrix values:")
+for i in range(n):
+    row = list(map(int, input().split()))
+    matrix.append(row)
+
+# Row-wise sum
+print("Row-wise sum:")
+for i in range(n):
+    print(sum(matrix[i]))
+
+# Column-wise sum
+print("Column-wise sum:")
+for j in range(n):
+    col_sum = 0
+    for i in range(n):
+        col_sum += matrix[i][j]
+    print(col_sum)
+
+# Diagonal sums
+main_diag = 0
+sec_diag = 0
+
+for i in range(n):
+    main_diag += matrix[i][i]
+    sec_diag += matrix[i][n - i - 1]
+
+print("Main diagonal sum:", main_diag)
+print("Secondary diagonal sum:", sec_diag)
+
+OUTPUT:
+Row-wise sum:
+6
+15
+24
+Column-wise sum:
+12
+15
+18
+Main diagonal sum: 15
+Secondary diagonal sum: 15
