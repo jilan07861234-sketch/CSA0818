@@ -115,3 +115,13 @@ while top <= bottom and left <= right:
 OUTPUT:
 Spiral Order:
 1 2 3 6 9 8 7 4 5
+
+SUM OF DIGITS:
+num = int(input("Enter an integer: "))
+sum_of_digits = 0
+n = abs(num)   
+while n > 0:
+    digit = n % 10
+    sum_of_digits += digit
+    n //= 10
+print("Sum of digits:", sum_of_digits)
