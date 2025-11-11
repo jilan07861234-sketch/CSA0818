@@ -1,4 +1,4 @@
-# Read size of matrix
+SUM OF ROWS,COLUMNS AND DIAGONAL IN GIVEN MATRIX
 n = int(input("Enter size of square matrix: "))
 matrix = []
 print("Enter matrix values:")
@@ -48,7 +48,70 @@ Main diagonal sum: 15
 Secondary diagonal sum: 15
 
 SUM OF NUMBERS DIVISIBLE BY 3 OR 5 FROM 1 TO 100:
+total=0
 for i in range(1, 101):
     if i % 3 == 0 or i % 5 == 0:
         total += i
 print("Sum of numbers divisible by 3 or 5 from 1 to 100 is:", total)
+
+OUTPUT:
+Sum of numbers divisible by 3 or 5 from 1 to 100 is: 2418
+
+ADDITIVE SEQUENCE
+def is_additive_sequence(seq):
+    if len(seq) < 3:
+        return False
+    for i in range(2, len(seq)):
+        if seq[i] != seq[i - 1] + seq[i - 2]:
+            return False
+    return True
+sequence = [1, 2, 3, 5, 8, 13]
+if is_additive_sequence(sequence):
+    print("The given sequence is an additive sequence.")
+else:
+    print("The given sequence is NOT an additive sequence.")
+
+OUTPUT:
+The given sequence is an additive sequence.
+
+PRINT THE MATRIX ELEMENTS IN SPIRAL MATRIX FORMAT:
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+rows = len(matrix)
+cols = len(matrix[0])
+
+top, bottom = 0, rows - 1
+left, right = 0, cols - 1
+
+print("Spiral Order:")
+
+while top <= bottom and left <= right:
+    # left → right
+    for i in range(left, right + 1):
+        print(matrix[top][i], end=" ")
+    top += 1
+
+    # top → bottom
+    for i in range(top, bottom + 1):
+        print(matrix[i][right], end=" ")
+    right -= 1
+
+    # right → left
+    if top <= bottom:
+        for i in range(right, left - 1, -1):
+            print(matrix[bottom][i], end=" ")
+        bottom -= 1
+
+    # bottom → top
+    if left <= right:
+        for i in range(bottom, top - 1, -1):
+            print(matrix[i][left], end=" ")
+        left += 1
+
+OUTPUT:
+Spiral Order:
+1 2 3 6 9 8 7 4 5
